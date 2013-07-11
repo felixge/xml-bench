@@ -3,7 +3,6 @@ package main
 import (
 	"bytes"
 	"encoding/xml"
-	"fmt"
 	"io"
 	"os"
 	"testing"
@@ -25,7 +24,6 @@ func init() {
 	}
 }
 
-var j = 0
 func BenchmarkHello(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		// copy exampleXml buffer
@@ -34,21 +32,16 @@ func BenchmarkHello(b *testing.B) {
 		*reader = *exampleXml
 		b.StartTimer()
 
-		j++
-		if _, err := readStreamHeader(reader); err != nil {
+		if err := readStreamHeader(reader); err != nil {
 			panic(err)
 		}
 	}
 }
 
-func readStreamHeader(reader io.Reader) (string, error) {
+func readStreamHeader(reader io.Reader) (error) {
 	decoder := xml.NewDecoder(reader)
-	elem, err := nextElement(decoder)
-	if err != nil {
-		return "", err
-	}
-
-	return XmlStartElementToString(elem), nil
+	_, err := nextElement(decoder)
+	return err
 }
 
 func nextElement(decoder *xml.Decoder) (*xml.StartElement, error) {
@@ -67,18 +60,4 @@ func nextElement(decoder *xml.Decoder) (*xml.StartElement, error) {
 		}
 	}
 	panic("unreachable")
-}
-
-func XmlStartElementToString(elem *xml.StartElement) string {
-	var buf bytes.Buffer
-	buf.WriteByte('<')
-	buf.WriteString(elem.Name.Local)
-	if elem.Name.Space != "" {
-		fmt.Fprintf(&buf, " xmlns='%s'", elem.Name.Space)
-	}
-	for _, attr := range elem.Attr {
-		fmt.Fprintf(&buf, " %s='%s'", attr.Name.Local, attr.Value)
-	}
-	buf.WriteByte('>')
-	return buf.String()
 }

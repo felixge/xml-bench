@@ -1,3 +1,3 @@
 PASS
-BenchmarkHello	  100000	     15633 ns/op
-ok  	_/Users/felix/code/xml-bench	1.958s
+BenchmarkHello	  200000	     11684 ns/op
+ok  	_/Users/felix/code/xml-bench	2.796s
