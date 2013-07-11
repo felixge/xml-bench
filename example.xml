@@ -1,0 +1,1461 @@
+<?xml version="1.0"?>
+
+
+<stream:stream xmlns:stream="http://etherx.jabber.org/streams" version="1.0" xmlns="jabber:client" to="gmail.com" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+
+
+<stream:stream from="gmail.com" id="4504D18B1923B0A3" version="1.0" xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client">
+
+
+<stream:features>
+<starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls">
+<required/>
+</starttls>
+<mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl">
+<mechanism>X-OAUTH2</mechanism>
+<mechanism>X-GOOGLE-TOKEN</mechanism>
+</mechanisms>
+</stream:features>
+
+
+<starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"/>
+
+
+<proceed xmlns="urn:ietf:params:xml:ns:xmpp-tls"/>
+
+
+<?xml version="1.0"?>
+
+
+<stream:stream xmlns:stream="http://etherx.jabber.org/streams" version="1.0" xmlns="jabber:client" to="gmail.com" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+
+
+<stream:stream from="gmail.com" id="D880042EB7549F89" version="1.0" xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client">
+
+
+<stream:features>
+<mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl">
+<mechanism>X-OAUTH2</mechanism>
+<mechanism>X-GOOGLE-TOKEN</mechanism>
+<mechanism>PLAIN</mechanism>
+</mechanisms>
+</stream:features>
+
+
+<auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">AHVuZ2VyaWsAVGhlV2ludGVyMjAxMA==</auth>
+
+
+<success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+
+
+<?xml version="1.0"?>
+
+
+<stream:stream xmlns:stream="http://etherx.jabber.org/streams" version="1.0" xmlns="jabber:client" to="gmail.com" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+
+
+<stream:stream from="gmail.com" id="ABEB65C0C0DF1093" version="1.0" xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client">
+
+
+<stream:features>
+<bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/>
+<session xmlns="urn:ietf:params:xml:ns:xmpp-session"/>
+</stream:features>
+
+
+<iq type="set" id="bind_1">
+<bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+<resource>Psi+</resource>
+</bind>
+</iq>
+
+
+<iq xmlns="jabber:client" type="result" id="bind_1">
+<bind xmlns="urn:ietf:params:xml:ns:xmpp-bind">
+<jid>ungerik@gmail.com/Psi+8B65FA97</jid>
+</bind>
+</iq>
+
+
+<iq type="set" id="aabaa">
+<session xmlns="urn:ietf:params:xml:ns:xmpp-session"/>
+</iq>
+
+
+<iq type="result" id="aabaa"/>
+
+
+<iq type="get" id="aabba">
+<query xmlns="jabber:iq:roster"/>
+</iq>
+
+
+<iq type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aabba">
+<query xmlns="jabber:iq:roster">
+<item subscription="both" name="antony" jid="antony@qmcodes.com">
+<group>Google Talk</group>
+</item>
+<item subscription="both" name="Martin Becke" jid="bassball1980@gmail.com">
+<group>Google Talk</group>
+</item>
+<item subscription="both" name="George Patterson" jid="george.patterson@gmail.com">
+<group>Google Talk</group>
+</item>
+<item subscription="both" name="lewissbaker" jid="lewissbaker@gmail.com">
+<group>Google Talk</group>
+</item>
+<item subscription="both" name="Ramin Dalkouhi" jid="romout@gmail.com">
+<group>Google Talk</group>
+</item>
+<item subscription="both" name="sri.panyam" jid="sri.panyam@gmail.com">
+<group>Google Talk</group>
+</item>
+<item subscription="both" name="norbert" jid="norbert@plasch.cc">
+<group>Google Talk</group>
+</item>
+<item subscription="none" jid="xobadgirl.meghanxo62@insta-messenger.net"/>
+<item subscription="both" name="antony" jid="amcdey@gmail.com">
+<group>Google Talk</group>
+</item>
+<item subscription="none" name="Thomas Ilk" jid="ilkthomas@gmail.com"/>
+<item subscription="none" name="Cecelia Minksy" jid="k5hotty2@gmail.com"/>
+<item subscription="both" name="Michael Woods" jid="michaelrichardwoods@gmail.com">
+<group>Google Talk</group>
+</item>
+<item subscription="none" jid="blondelaila4@aol.com"/>
+<item subscription="both" name="Thilini M" jid="0isrvk4247e8h3lse7n37y0354@public.talk.google.com"/>
+<item subscription="both" name="Griff Miester" jid="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com"/>
+<item subscription="both" name="Thorsten Koch" jid="1rg6i0imkpv0a0s42f1xvwyhpr@public.talk.google.com"/>
+<item subscription="both" name="William Donovan" jid="26gowcxuxtgez02mnkw3risevo@public.talk.google.com"/>
+<item subscription="both" name="Moritz Plassnig" jid="2izfwywqnprs82h57ze1ci9unp@public.talk.google.com"/>
+<item subscription="both" name="Andy Gelme" jid="2oox804etd1683q4bbaeceiasl@public.talk.google.com"/>
+<item subscription="both" name="Thomas Ilk" jid="2smija4abyr6730ik2q2cnqt2j@public.talk.google.com"/>
+<item subscription="both" name="Mike D. Njoroge" jid="363dmppe9jzd23p19z83yhritd@public.talk.google.com"/>
+<item subscription="both" name="Andreas Becke" jid="3pxpxve1vhwwa3892ltk1uw6ib@public.talk.google.com"/>
+</query>
+</iq>
+
+
+<presence>
+<priority>50</priority>
+<c xmlns="http://jabber.org/protocol/caps" node="http://psi-dev.googlecode.com/caps" ver="0.15" ext="cs e-time ep-notify-2 html last-act mr sxe whiteboard"/>
+<x xmlns="vcard-temp:x:update">
+<photo>0cac7da73e28b6ea5c4e3657f4d8414cb6928382</photo>
+</x>
+</presence>
+
+
+<iq type="get" to="ungerik@gmail.com/Psi+8B65FA97" id="aabda">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#e-time"/>
+</iq>
+
+
+<iq type="get" to="ungerik@gmail.com/Psi+8B65FA97" id="aabea">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#last-act"/>
+</iq>
+
+
+<iq type="get" to="ungerik@gmail.com/Psi+8B65FA97" id="aabfa">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#mr"/>
+</iq>
+
+
+<iq type="get" to="ungerik@gmail.com/Psi+8B65FA97" id="aac0a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#sxe"/>
+</iq>
+
+
+<iq type="get" to="ungerik@gmail.com/Psi+8B65FA97" id="aac1a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#whiteboard"/>
+</iq>
+
+
+<iq type="get" id="aac2a">
+<query xmlns="jabber:iq:privacy"/>
+</iq>
+
+
+<iq type="get" id="aac3a">
+<query xmlns="jabber:iq:private">
+<storage xmlns="storage:bookmarks"/>
+</query>
+</iq>
+
+
+<iq type="get" to="ungerik@gmail.com" id="aac4a">
+<vCard xmlns="vcard-temp"/>
+</iq>
+
+
+<iq type="get" to="gmail.com" id="aac5a">
+<query xmlns="http://jabber.org/protocol/disco#info"/>
+</iq>
+
+
+<iq from="ungerik@gmail.com/Psi+8B65FA97" type="get" to="ungerik@gmail.com/Psi+8B65FA97" id="aabda">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#e-time"/>
+</iq>
+
+
+<iq type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aabda">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#e-time">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="urn:xmpp:time"/>
+</query>
+</iq>
+
+
+<iq from="ungerik@gmail.com/Psi+8B65FA97" type="get" to="ungerik@gmail.com/Psi+8B65FA97" id="aabea">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#last-act"/>
+</iq>
+
+
+<iq type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aabea">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#last-act">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="jabber:iq:last"/>
+</query>
+</iq>
+
+
+<iq from="ungerik@gmail.com/Psi+8B65FA97" type="get" to="ungerik@gmail.com/Psi+8B65FA97" id="aabfa">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#mr"/>
+</iq>
+
+
+<iq type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aabfa">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#mr">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="urn:xmpp:receipts"/>
+</query>
+</iq>
+
+
+<iq from="ungerik@gmail.com/Psi+8B65FA97" type="get" to="ungerik@gmail.com/Psi+8B65FA97" id="aac0a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#sxe"/>
+</iq>
+
+
+<iq type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aac0a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#sxe">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="http://jabber.org/protocol/sxe"/>
+</query>
+</iq>
+
+
+<iq from="ungerik@gmail.com/Psi+8B65FA97" type="get" to="ungerik@gmail.com/Psi+8B65FA97" id="aac1a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#whiteboard"/>
+</iq>
+
+
+<iq type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aac1a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#whiteboard">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="http://www.w3.org/2000/svg"/>
+</query>
+</iq>
+
+
+<iq type="error" id="aac2a" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="jabber:iq:privacy"/>
+<error type="cancel" code="501">
+<feature-not-implemented xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/>
+</error>
+</iq>
+
+
+<iq type="error" id="aac3a" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="jabber:iq:private">
+<storage xmlns="storage:bookmarks"/>
+</query>
+<error type="cancel" code="501">
+<feature-not-implemented xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/>
+</error>
+</iq>
+
+
+<iq from="gmail.com" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aac5a">
+<query xmlns="http://jabber.org/protocol/disco#info">
+<identity category="server" type="im" name="Google Talk"/>
+<feature var="http://jabber.org/protocol/disco#info"/>
+<feature var="google:jingleinfo"/>
+<feature var="google:roster"/>
+<feature var="google:nosave"/>
+<feature var="google:setting"/>
+<feature var="google:shared-status"/>
+<feature var="http://jabber.org/protocol/archive#otr"/>
+<feature var="google:queue"/>
+<feature var="google:mail:notify"/>
+<feature var="http://jabber.org/protocol/archive#save"/>
+</query>
+</iq>
+
+
+<iq from="ungerik@gmail.com" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aac4a">
+<vCard xmlns="vcard-temp">
+<FN>Erik Unger</FN>
+<PHOTO>
+<TYPE>image/jpeg</TYPE>
+<BINVAL>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</BINVAL>
+</PHOTO>
+</vCard>
+</iq>
+
+
+<presence from="george.patterson@gmail.com/android_talk7440607193ae" to="ungerik@gmail.com/Psi+8B65FA97">
+<status/>
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<x xmlns="vcard-temp:x:update">
+<photo/>
+</x>
+</presence>
+
+
+<iq type="get" to="george.patterson@gmail.com/android_talk7440607193ae" id="aac6a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://www.android.com/gtalk/client/caps#1.1"/>
+</iq>
+
+
+<iq type="get" to="george.patterson@gmail.com/android_talk7440607193ae" id="aac7a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://www.android.com/gtalk/client/caps#pmuc-v1"/>
+</iq>
+
+
+<iq type="get" to="george.patterson@gmail.com/android_talk7440607193ae" id="aac8a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://www.android.com/gtalk/client/caps#voice-v1"/>
+</iq>
+
+
+<iq type="get" to="george.patterson@gmail.com/android_talk7440607193ae" id="aac9a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://www.android.com/gtalk/client/caps#video-v1"/>
+</iq>
+
+
+<iq type="get" to="george.patterson@gmail.com/android_talk7440607193ae" id="aacaa">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://www.android.com/gtalk/client/caps#camera-v1"/>
+</iq>
+
+
+<presence from="363dmppe9jzd23p19z83yhritd@public.talk.google.com/android84e5431a607c" to="ungerik@gmail.com/Psi+8B65FA97">
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>326fdd2498126bcde1cc24e3476da435f698e80b</photo>
+</x>
+</presence>
+
+
+<presence from="363dmppe9jzd23p19z83yhritd@public.talk.google.com/android_talk89914bec27f7" to="ungerik@gmail.com/Psi+8B65FA97">
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<show>away</show>
+<x xmlns="vcard-temp:x:update">
+<photo>326fdd2498126bcde1cc24e3476da435f698e80b</photo>
+</x>
+</presence>
+
+
+<presence from="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/gmail.5632DAE0" to="ungerik@gmail.com/Psi+8B65FA97">
+<show>away</show>
+<priority>0</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://mail.google.com/xmpp/client/caps" ver="1.1" ext="pmuc-v1 sms-v1 camera-v1 vavinvite-v1 video-v1 voice-v1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>0b4e0f0ba5939120bbc869fc1c37e54d689cf5bf</photo>
+</x>
+</presence>
+
+
+<iq type="get" to="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/gmail.5632DAE0" id="aacba">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://mail.google.com/xmpp/client/caps#1.1"/>
+</iq>
+
+
+<iq type="get" to="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/gmail.5632DAE0" id="aacca">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://mail.google.com/xmpp/client/caps#pmuc-v1"/>
+</iq>
+
+
+<iq type="get" to="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/gmail.5632DAE0" id="aacda">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://mail.google.com/xmpp/client/caps#sms-v1"/>
+</iq>
+
+
+<iq type="get" to="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/gmail.5632DAE0" id="aacea">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://mail.google.com/xmpp/client/caps#camera-v1"/>
+</iq>
+
+
+<iq type="get" to="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/gmail.5632DAE0" id="aacfa">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://mail.google.com/xmpp/client/caps#vavinvite-v1"/>
+</iq>
+
+
+<iq type="get" to="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/gmail.5632DAE0" id="aad0a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://mail.google.com/xmpp/client/caps#video-v1"/>
+</iq>
+
+
+<iq type="get" to="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/gmail.5632DAE0" id="aad1a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://mail.google.com/xmpp/client/caps#voice-v1"/>
+</iq>
+
+
+<presence from="bassball1980@gmail.com/579FAC8C" to="ungerik@gmail.com/Psi+8B65FA97">
+<priority>1</priority>
+<c xmlns="http://jabber.org/protocol/caps" node="http://pidgin.im/" ver="71LAP/wlWGfun7j+Q4FCSSuAhQw=" hash="sha-1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>d1c927e1d1d69b93ef52fc78f710e8bdfb6bb2e8</photo>
+</x>
+</presence>
+
+
+<iq type="get" to="bassball1980@gmail.com/579FAC8C" id="aad2a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://pidgin.im/#71LAP/wlWGfun7j+Q4FCSSuAhQw="/>
+</iq>
+
+
+<iq type="get" to="bassball1980@gmail.com" id="aad3a">
+<vCard xmlns="vcard-temp"/>
+</iq>
+
+
+<presence from="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/Talk.v104C68DB07B" to="ungerik@gmail.com/Psi+8B65FA97">
+<show>away</show>
+<priority>24</priority>
+<c xmlns="http://jabber.org/protocol/caps" node="http://www.google.com/xmpp/client/caps" ver="1.0.0.104" ext="share-v1 voice-v1"/>
+<x xmlns="jabber:x:delay" stamp="20130312T08:30:37"/>
+<x xmlns="vcard-temp:x:update">
+<photo>0b4e0f0ba5939120bbc869fc1c37e54d689cf5bf</photo>
+</x>
+</presence>
+
+
+<iq type="get" to="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/Talk.v104C68DB07B" id="aad4a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://www.google.com/xmpp/client/caps#1.0.0.104"/>
+</iq>
+
+
+<iq type="get" to="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/Talk.v104C68DB07B" id="aad5a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://www.google.com/xmpp/client/caps#share-v1"/>
+</iq>
+
+
+<iq type="get" to="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/Talk.v104C68DB07B" id="aad6a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://www.google.com/xmpp/client/caps#voice-v1"/>
+</iq>
+
+
+<presence from="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/189D3103" to="ungerik@gmail.com/Psi+8B65FA97">
+<show>away</show>
+<c xmlns="http://jabber.org/protocol/caps" node="http://pidgin.im/" ver="elbDWGeJ8mFRjVG016NePLIqJxA=" hash="sha-1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>1bc8f4aad1fec7d2a30cc38dd6e0f25b0b0d3f4d</photo>
+</x>
+</presence>
+
+
+<iq type="get" to="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/189D3103" id="aad7a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://pidgin.im/#elbDWGeJ8mFRjVG016NePLIqJxA="/>
+</iq>
+
+
+<presence from="sri.panyam@gmail.com/gmail.4DD81D79" to="ungerik@gmail.com/Psi+8B65FA97">
+<status/>
+<show>away</show>
+<priority>0</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://mail.google.com/xmpp/client/caps" ver="1.1" ext="pmuc-v1 sms-v1 vavinvite-v1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>8f410b9cebc9ef652cf1a60c34228a253b3ea38e</photo>
+</x>
+</presence>
+
+
+<iq type="get" to="sri.panyam@gmail.com" id="aad8a">
+<vCard xmlns="vcard-temp"/>
+</iq>
+
+
+<presence from="romout@gmail.com/android_talkf55384f89e7b" to="ungerik@gmail.com/Psi+8B65FA97">
+<status/>
+<show>away</show>
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>806c9bfebd3f7c07e90963eb6a13056dcef615cf</photo>
+</x>
+</presence>
+
+
+<presence from="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/TalkGadgetF05FBE7E" to="ungerik@gmail.com/Psi+8B65FA97">
+<show>away</show>
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://talkgadget.google.com/client/caps" ver="1.0" ext="pmuc-v1 vavinvite-v1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>1bc8f4aad1fec7d2a30cc38dd6e0f25b0b0d3f4d</photo>
+</x>
+</presence>
+
+
+<iq type="get" to="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/TalkGadgetF05FBE7E" id="aad9a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://talkgadget.google.com/client/caps#1.0"/>
+</iq>
+
+
+<iq type="get" to="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/TalkGadgetF05FBE7E" id="aadaa">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://talkgadget.google.com/client/caps#pmuc-v1"/>
+</iq>
+
+
+<iq type="get" to="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/TalkGadgetF05FBE7E" id="aadba">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://talkgadget.google.com/client/caps#vavinvite-v1"/>
+</iq>
+
+
+<presence from="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/James’s Ma987A682B" to="ungerik@gmail.com/Psi+8B65FA97">
+<priority>0</priority>
+<c xmlns="http://jabber.org/protocol/caps" node="http://www.apple.com/ichat/caps" ver="900" ext="ice"/>
+<x xmlns="http://jabber.org/protocol/tune"/>
+<x xmlns="vcard-temp:x:update">
+<photo>1bc8f4aad1fec7d2a30cc38dd6e0f25b0b0d3f4d</photo>
+</x>
+</presence>
+
+
+<iq type="get" to="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/James’s Ma987A682B" id="aadca">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://www.apple.com/ichat/caps#900"/>
+</iq>
+
+
+<iq type="get" to="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/James’s Ma987A682B" id="aadda">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://www.apple.com/ichat/caps#ice"/>
+</iq>
+
+
+<iq from="ungerik@gmail.com/Psi+8B65FA97" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aabda">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#e-time">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="urn:xmpp:time"/>
+</query>
+</iq>
+
+
+<iq from="ungerik@gmail.com/Psi+8B65FA97" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aabea">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#last-act">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="jabber:iq:last"/>
+</query>
+</iq>
+
+
+<iq from="ungerik@gmail.com/Psi+8B65FA97" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aabfa">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#mr">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="urn:xmpp:receipts"/>
+</query>
+</iq>
+
+
+<iq from="ungerik@gmail.com/Psi+8B65FA97" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aac0a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#sxe">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="http://jabber.org/protocol/sxe"/>
+</query>
+</iq>
+
+
+<iq from="ungerik@gmail.com/Psi+8B65FA97" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aac1a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#whiteboard">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="http://www.w3.org/2000/svg"/>
+</query>
+</iq>
+
+
+<iq from="george.patterson@gmail.com/android_talk7440607193ae" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aac6a">
+<query xmlns="http://jabber.org/protocol/disco#info">
+<identity category="account" type="registered" name="Google Talk User Account"/>
+<feature var="http://jabber.org/protocol/disco#info"/>
+<feature var="http://jabber.org/protocol/disco#items"/>
+</query>
+</iq>
+
+
+<iq from="george.patterson@gmail.com/android_talk7440607193ae" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aac7a">
+<query xmlns="http://jabber.org/protocol/disco#info">
+<identity category="account" type="registered" name="Google Talk User Account"/>
+<feature var="http://jabber.org/protocol/disco#info"/>
+<feature var="http://jabber.org/protocol/disco#items"/>
+</query>
+</iq>
+
+
+<iq from="george.patterson@gmail.com/android_talk7440607193ae" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aac8a">
+<query xmlns="http://jabber.org/protocol/disco#info">
+<identity category="account" type="registered" name="Google Talk User Account"/>
+<feature var="http://jabber.org/protocol/disco#info"/>
+<feature var="http://jabber.org/protocol/disco#items"/>
+</query>
+</iq>
+
+
+<iq from="george.patterson@gmail.com/android_talk7440607193ae" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aac9a">
+<query xmlns="http://jabber.org/protocol/disco#info">
+<identity category="account" type="registered" name="Google Talk User Account"/>
+<feature var="http://jabber.org/protocol/disco#info"/>
+<feature var="http://jabber.org/protocol/disco#items"/>
+</query>
+</iq>
+
+
+<iq from="george.patterson@gmail.com/android_talk7440607193ae" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aacaa">
+<query xmlns="http://jabber.org/protocol/disco#info">
+<identity category="account" type="registered" name="Google Talk User Account"/>
+<feature var="http://jabber.org/protocol/disco#info"/>
+<feature var="http://jabber.org/protocol/disco#items"/>
+</query>
+</iq>
+
+
+<iq from="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/gmail.5632DAE0" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aacba">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://mail.google.com/xmpp/client/caps#1.1">
+<identity category="client" type="pc"/>
+<feature var="http://jabber.org/protocol/disco#info"/>
+</query>
+</iq>
+
+
+<iq from="bassball1980@gmail.com" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aad3a">
+<vCard xmlns="vcard-temp">
+<FN>Martin Becke</FN>
+<PHOTO>
+<TYPE>image/png</TYPE>
+<BINVAL>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</BINVAL>
+</PHOTO>
+</vCard>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfb0" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#0.15"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfb0">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#0.15">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="http://jabber.org/protocol/bytestreams"/>
+<feature var="http://jabber.org/protocol/ibb"/>
+<feature var="http://jabber.org/protocol/si"/>
+<feature var="http://jabber.org/protocol/si/profile/file-transfer"/>
+<feature var="http://jabber.org/protocol/disco#info"/>
+<feature var="urn:xmpp:bob"/>
+<feature var="http://jabber.org/protocol/commands"/>
+<feature var="http://jabber.org/protocol/rosterx"/>
+<feature var="http://jabber.org/protocol/muc"/>
+<feature var="jabber:x:data"/>
+<feature var="jabber:iq:version"/>
+</query>
+</iq>
+
+
+<iq from="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/gmail.5632DAE0" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aacca">
+<query xmlns="http://jabber.org/protocol/disco#info">
+<feature var="http://www.google.com/xmpp/protocol/pmuc/v1"/>
+</query>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfb1" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#cs"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfb1">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#cs">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="http://jabber.org/protocol/chatstates"/>
+</query>
+</iq>
+
+
+<iq from="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/gmail.5632DAE0" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aacda">
+<query xmlns="http://jabber.org/protocol/disco#info">
+<feature var="http://www.google.com/xmpp/protocol/sms/v1"/>
+</query>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfb2" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#e-time"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfb2">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#e-time">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="urn:xmpp:time"/>
+</query>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfb3" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#ep-notify-2"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfb3">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#ep-notify-2">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="http://jabber.org/protocol/mood+notify"/>
+<feature var="http://jabber.org/protocol/activity+notify"/>
+<feature var="http://jabber.org/protocol/tune+notify"/>
+<feature var="http://jabber.org/protocol/geoloc+notify"/>
+<feature var="urn:xmpp:avatar:metadata+notify"/>
+</query>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfb4" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#html"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfb4">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#html">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="http://jabber.org/protocol/xhtml-im"/>
+</query>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfb5" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#last-act"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfb5">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#last-act">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="jabber:iq:last"/>
+</query>
+</iq>
+
+
+<iq from="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/gmail.5632DAE0" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aacea">
+<query xmlns="http://jabber.org/protocol/disco#info">
+<feature var="http://www.google.com/xmpp/protocol/camera/v1"/>
+</query>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfb6" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#mr"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfb6">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#mr">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="urn:xmpp:receipts"/>
+</query>
+</iq>
+
+
+<iq from="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/gmail.5632DAE0" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aacfa">
+<query xmlns="http://jabber.org/protocol/disco#info">
+<feature var="http://www.google.com/xmpp/protocol/vavinvite/v1"/>
+</query>
+</iq>
+
+
+<iq from="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/gmail.5632DAE0" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aad0a">
+<query xmlns="http://jabber.org/protocol/disco#info">
+<feature var="http://www.google.com/xmpp/protocol/video/v1"/>
+</query>
+</iq>
+
+
+<iq from="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/gmail.5632DAE0" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aad1a">
+<query xmlns="http://jabber.org/protocol/disco#info">
+<feature var="http://www.google.com/xmpp/protocol/voice/v1"/>
+</query>
+</iq>
+
+
+<iq from="sri.panyam@gmail.com" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aad8a">
+<vCard xmlns="vcard-temp">
+<FN>Sriram Panyam</FN>
+<PHOTO>
+<TYPE>image/jpg</TYPE>
+<BINVAL>/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAUDBAkICAkJCQkICQkIBQUJCQgHCAgJCQgICAYGBgkGCQkHFhwXCQgaCQcHGCEYGh0dHx8fBxciJCIeJBweHx4BBQUFCAcIDwkJDxQOEAwUExUUFBQUFB4UFBQUFRQUFBQVEh4UHhQUFBQUFB4eHh4SFBQUFB4UHh4UHh4UHhQeFP/AABEIAGAAYAMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAEBQMGBwIBAAj/xABEEAABAgMEBwMHCQcFAQAAAAACAxIAASIEBRMyESEjMUFCUgZRYgczYXFygZEUU4KSorHBwtIVJEOh0eLyc4Oy4fAI/8QAGgEAAwEBAQEAAAAAAAAAAAAAAwQFAgEGAP/EACkRAAICAgEDAwMFAQAAAAAAAAECABEDIQQxQVESYYETI3EiMpHR8AX/2gAMAwEAAhEDEQA/ANgSTggUo9AIDv6/rNd6b11BHpTGpU/ZT3+/dFNnrZkhRcYBKKx2q7cIWFyae3V6RKgPaUHMXol8YofaPttabwcmliIWZ4CQp+cISe15by0tLTKWqXpitW6zJkqIgRiOHURVN6uOb9Upaolcjn9k/mUcPEJFtLDbL3tl4OJRUhAeXKA9OzDV8dceWWzKU4TlNmeJ0i3+6BUlCEkyESLEMHcqY4Zg0yHXu39++LRjsQwAcOOZkoo7lfkdvy+6I2XOxOzcqYuOtQa5r5tllLZ1CVRCNSficmc83qnKNA7O9r0LSIioWArh1JrUiXskffGepTJobQRa+mmrwCO7V6IW3zbl0xFyaTReLhqIqwaFUqeafwg3H5bqaB+IPNxFO5vIFEwRjtw9rF0GiJU/MqZS9jiPrlGl9mb/AErZSJCK4pgSiDnEIllPxD93GKuHlrk10MQycZse+0eDE4RHKUdjB7gpiV69sbSuLU22NMqRUGpQyLKDldEh90oo952VNdQyJVdRXmxHONT2umLIafNy5m5i8LXak++cDJpCBEXNiOKrp6neGPIZP+lkyG2Px2lXHxUGgKi+7rhEUhEiqJ5EVQtJ+zayen4zlA9vs+ERCKThHmU2j2+EJ6XTLvnPhFgtcsVInEVSfKVTc4tZyz9EJLSCjxwybkdmcXjHVUTe/RKMJymayYVgF1U6uC8EycJUtpaItER/y4QWV5qgTWkIpp1OEcom94u1Ny7p6YXWO7xEiJPMo8nE1zi5+5vqj20kTiFUavnESc1wc3TpqjX1lLanQWAhnyisScPsplUXjEdf8tPCIrTeihGSYtJvMoLS+xKcI7ZcxtehsxTUByK5VD0mkR5hn3b5QLZb2U5jEVBzCXN054YABFiCbIe+palrQ1CoSTFSmocRPPSYkGsau+DOz95qpEBETVMqag0qfW1O/nFNu+9nk1TMVLeX7f8A74QwsyyhAwVGqJ1cpCY+EdbdEaPicDgm5p129vF7NSoJLpl87+VTePviz3T5SbGq4VHJEPTtB+xrGMFtd6qCntSby00+18R4xX1LzEahc/qEs0P8fNkAomLZlTtNIBQk/OkIDhuxCaIB4CLqiReTxL83N/bE1kmRBiKVuABJERHCcPzb5affPTEVmFUxEiYntKhTIVBIeWr+keOLjrKJFQA01MIkhIScnzZml7GimXCObuny9Ly2jnN5cMeYeEMrQi4hFxC2p2USbyEXtcIjOzCxxOEhzEnlJ2Zr+T1aIIuX1CvM5R6yK7LOk4yIhEVEzaRPcKwvAQdppGZNlLVop1z7115IJ1KERi5guLw106tOvvhtY2qoKJtISJCkvE9Vpj6iHTEwAK6eO3aJqYdrRGrCW5Vh44B75T4TKctMtUNZftsK8QqgMn4iFRETSIkhEky/hqZXMzp/jCG0WUF6gTFNVBM3I4jiJMaHien36Jz0xZ0lvPpCo4kEDWFNQSFQ0/mRIJaFFOMtOjhr1xU7amKpYqCZVKbYneAzHEE56RHulB8Lbu/97wOXFde8P7PWBNUlSJrkWKCmRVKiRsLNP3z0fjCK02wgb/DLlJxVNeGXc6OrvV/eSIXNw0NoRFWT+UeUW/GFt72tRUlE3Ds7Wv00uV5hPW6foigRZB7RbKoUekdR1gl5W0lebL9Uv0wOir0/ag6x3UarqhEh5WtIelw6fjKcL7wsxpEQkIuHmTcP+JeicNY8i/tBixU9TNTsl9E0RER2an0SHIwhgmyWsU1Rw8IRUTaKZPpWJjahnoHSLpbpylCCS9PV9V0cACg1O8QkQ1B7MeX+mJacEy9GkRByipzDmES+nKThl7oS2W1YqHnFSUFRuIQkm/DP4EM4iuW24Q9XUJFUXj36HejVDH9oJEDRHDLE82NPP0wPGpVgPcThXUgu207Iqh5PojWZZJShv5Mr3H5cSrU1ULSgaBOEqxfUBJnLQXfKfhl64r9mtSAiWKQ4dGYipIsvDTzcIfXSimVpQLzZCvThk0ToPMO4u/vihlf05lP4gkW1lnuvyS2le+FFSXFOxEgDcMixSHlBMtxDN2uc98tHdCby83JZrns1mQQRAflKmIVRPkNSWIZa5qH3SnPRKWn1RsHYIypEVWj82o1w/wCnxIO7RKej0RR//pdP95S6f2MbXdQq2j9UUcwTHjLqPAg2dmIW+nSfnWxSEbUROJ2GFPK2iPrwuwsdUiYTrWYk0SaRFWm7dMhbx3b4iTMhVy/wHOb+aPu06xOXFJrSUqqJziAKxI/ulH2QnVRfVRYa7CUIlATdS4Scofj4y93CGNhSG0i3MfKTnO+jzaB79UUy0GqVJJNEctLR9vvIvviW5LawhIXOy7PZkPVVp0wR8R9Ng7gw29zUEzTyiQiXTSRfdmge9lyQElRIWjy9Tv6QJdygEQtpIczsw9TuPx/CC74sSa6RCdQkypIiEqfZiADTAGUQ5ZZ0C5EJKKJpNFiglWLeeot385yie77U48zmpuqqIfH7M4UDeAiOFhuaxPDIieIl4tNXrgi7LQmGVpCLxyk72HFrKCIn6gagy9wy97SmYikQOCjEGpzmPFuvM5sF3deClmJMgIyURDETxxBRMXUf8S4ThAazWtHMof1eX8sc2cjInNbkJ3V4N+nV6YayL91fiZxtN78nflAX82omAmnyuJMRd4eceO/d3boVeWW+l7QZfKlEiwrCvg4QMcKwPF2+qRDv4a4rwXjhWqyJKCG2x8tJDhgDaumZfjHvleV/edoR4al0oEOHS4mKovd07LXG+WWKgXq45lxoFsDcydECeSji8w3D5cmeGCqbrSaSoqJksmBJkSZNPZJV16ipHfwgBI6v9uLxblUFSVTIgcmxPaZh2SVDdOnm3yjfJyekCT1UGV2yWFAwFMqlFH1DUNPPugK23AAE4W9PT9mC7WonZl0xcOGOURUKrO6ktY5h46IYWs8UCY1RryaTfog7c6cK/UZTo6M0EB1FEhHaECoCq8CEcriyMMT1+uUtGmCkFiamKoCJEoDmk1pfGn75x32jvhNJWoQdhntCTFwJ5xbwL3adEVy7rTi4jFHJlUOINRE88w6dOXjOBriZxdVNGlahHt820UCxKiULZ1EPjOni2BbmtPyoyHmrUblH6I/jFe/ZC66qeIplpGlw4b+Xw8IsXZew/JDI6W4Bj9Ij9ekR/wCu6G0wqlWYEsTCL0sopppkRZlDHm5vyxG9qppiQtQwxykJFQ/nnpb+mHAklaUySNLFEXlsyISFtdOrSJcfV74XW26SJpJvFzKhqcI+L62nu1+mO5GBebU1Gnbi3EV6hhuEk0AaQk6oUkllDo5drr9mLP5YVi+R3VaWkOJYV0CblFSg0+EpFmUnGWgukS9rIlSJRFDzziwxFjDMSDKLhGU9Xolvh3f1sImC7HTKyWVu0IhIsIHGnr0ZhLX4Z92smXYC1HHyAqx81A5XeIlzOwIJv6zuthKJFXiNIlMpuSSCotGgSzapRB8uymQ0s6uqsQd+Pdpn6I9Vtwkuoo2olHFVlaDxzZfwl69Ec5O1HpiQFwwJjacVC1poCVeCVJG2hF5P0zEsuuAzu5Sxg17gFRridWJMNjerNonLToiMbSmRuIXKDUmoJZRJLGYXUTXT17penVENuvdwKARl5sxEhIaXBndvy8PVCKpkugNdx/U6T5n/2Q==</BINVAL>
+</PHOTO>
+</vCard>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfb7" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#sxe"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfb7">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#sxe">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="http://jabber.org/protocol/sxe"/>
+</query>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfb8" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#whiteboard"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfb8">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#whiteboard">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="http://www.w3.org/2000/svg"/>
+</query>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfb9" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#0.15"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfb9">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#0.15">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="http://jabber.org/protocol/bytestreams"/>
+<feature var="http://jabber.org/protocol/ibb"/>
+<feature var="http://jabber.org/protocol/si"/>
+<feature var="http://jabber.org/protocol/si/profile/file-transfer"/>
+<feature var="http://jabber.org/protocol/disco#info"/>
+<feature var="urn:xmpp:bob"/>
+<feature var="http://jabber.org/protocol/commands"/>
+<feature var="http://jabber.org/protocol/rosterx"/>
+<feature var="http://jabber.org/protocol/muc"/>
+<feature var="jabber:x:data"/>
+<feature var="jabber:iq:version"/>
+</query>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfba" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#cs"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfba">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#cs">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="http://jabber.org/protocol/chatstates"/>
+</query>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfbb" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#e-time"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfbb">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#e-time">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="urn:xmpp:time"/>
+</query>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfbc" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#ep-notify-2"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfbc">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#ep-notify-2">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="http://jabber.org/protocol/mood+notify"/>
+<feature var="http://jabber.org/protocol/activity+notify"/>
+<feature var="http://jabber.org/protocol/tune+notify"/>
+<feature var="http://jabber.org/protocol/geoloc+notify"/>
+<feature var="urn:xmpp:avatar:metadata+notify"/>
+</query>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfbd" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#html"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfbd">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#html">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="http://jabber.org/protocol/xhtml-im"/>
+</query>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfbe" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#last-act"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfbe">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#last-act">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="jabber:iq:last"/>
+</query>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfbf" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#mr"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfbf">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#mr">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="urn:xmpp:receipts"/>
+</query>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfc0" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#sxe"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfc0">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#sxe">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="http://jabber.org/protocol/sxe"/>
+</query>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfc1" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#whiteboard"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfc1">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://psi-dev.googlecode.com/caps#whiteboard">
+<identity category="client" type="pc" name="Psi+"/>
+<feature var="http://www.w3.org/2000/svg"/>
+</query>
+</iq>
+
+
+<iq from="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/189D3103" type="get" id="purple3a54e9f0" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#items" node="http://jabber.org/protocol/commands"/>
+</iq>
+
+
+<iq type="result" to="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/189D3103" id="purple3a54e9f0">
+<query xmlns="http://jabber.org/protocol/disco#items" node="http://jabber.org/protocol/commands"/>
+</iq>
+
+
+<iq from="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/TalkGadgetF05FBE7E" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aadaa">
+<info:query xmlns:info="http://jabber.org/protocol/disco#info">
+<info:feature var="http://www.google.com/xmpp/protocol/pmuc/v1"/>
+</info:query>
+</iq>
+
+
+<iq from="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/TalkGadgetF05FBE7E" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aad9a">
+<info:query xmlns:info="http://jabber.org/protocol/disco#info">
+<info:identity category="client" type="web"/>
+</info:query>
+</iq>
+
+
+<iq from="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/TalkGadgetF05FBE7E" type="error" to="ungerik@gmail.com/Psi+8B65FA97" id="aadba">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://talkgadget.google.com/client/caps#vavinvite-v1"/>
+<error type="cancel" code="501">
+<feature-not-implemented xmlns="urn:ietf:params:xml:ns:xmpp-stanzas"/>
+</error>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="result" id="aad2a" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://pidgin.im/#71LAP/wlWGfun7j+Q4FCSSuAhQw=">
+<identity category="client" type="pc" name="Pidgin"/>
+<feature var="jabber:iq:last"/>
+<feature var="jabber:iq:oob"/>
+<feature var="urn:xmpp:time"/>
+<feature var="jabber:iq:version"/>
+<feature var="jabber:x:conference"/>
+<feature var="http://jabber.org/protocol/bytestreams"/>
+<feature var="http://jabber.org/protocol/caps"/>
+<feature var="http://jabber.org/protocol/chatstates"/>
+<feature var="http://jabber.org/protocol/disco#info"/>
+<feature var="http://jabber.org/protocol/disco#items"/>
+<feature var="http://jabber.org/protocol/muc"/>
+<feature var="http://jabber.org/protocol/muc#user"/>
+<feature var="http://jabber.org/protocol/si"/>
+<feature var="http://jabber.org/protocol/si/profile/file-transfer"/>
+<feature var="http://jabber.org/protocol/xhtml-im"/>
+<feature var="urn:xmpp:ping"/>
+<feature var="urn:xmpp:attention:0"/>
+<feature var="urn:xmpp:bob"/>
+<feature var="urn:xmpp:jingle:1"/>
+<feature var="urn:xmpp:avatar:metadata+notify"/>
+<feature var="http://jabber.org/protocol/mood+notify"/>
+<feature var="http://jabber.org/protocol/tune+notify"/>
+<feature var="http://jabber.org/protocol/nick+notify"/>
+<feature var="http://jabber.org/protocol/ibb"/>
+</query>
+</iq>
+
+
+<iq from="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/Talk.v104C68DB07B" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aad4a">
+<query xmlns="http://jabber.org/protocol/disco#info">
+<identity category="client" type="pc"/>
+<feature var="http://jabber.org/protocol/disco#info"/>
+<feature var="http://www.google.com/xmpp/protocol/session"/>
+</query>
+</iq>
+
+
+<iq from="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/Talk.v104C68DB07B" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aad5a">
+<query xmlns="http://jabber.org/protocol/disco#info">
+<feature var="http://www.google.com/xmpp/protocol/share/v1"/>
+</query>
+</iq>
+
+
+<iq from="0isrvk4247e8h3lse7n37y0354@public.talk.google.com/Talk.v104C68DB07B" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aad6a">
+<query xmlns="http://jabber.org/protocol/disco#info">
+<feature var="http://www.google.com/xmpp/protocol/voice/v1"/>
+</query>
+</iq>
+
+
+<iq from="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/James’s Ma987A682B" type="result" id="aadca" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info">
+<identity category="client" type="pc" name="imagent"/>
+<feature var="http://jabber.org/protocol/xhtml-im"/>
+<feature var="vcard-temp:x:update"/>
+<feature var="http://jabber.org/protocol/disco#info"/>
+<feature var="jabber:iq:version"/>
+<feature var="http://jabber.org/protocol/si"/>
+<feature var="http://jabber.org/protocol/sipub"/>
+<feature var="http://jabber.org/protocol/bytestreams"/>
+<feature var="apple:profile:efh-transfer"/>
+<feature var="http://jabber.org/protocol/si/profile/file-transfer"/>
+<feature var="apple:profile:transfer-extensions:rsrcfork"/>
+<feature var="http://www.apple.com/xmpp/message-attachments"/>
+</query>
+</iq>
+
+
+<iq from="bassball1980@gmail.com/579FAC8C" type="get" id="purple3688bfc2" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#items" node="http://jabber.org/protocol/commands"/>
+</iq>
+
+
+<iq type="result" to="bassball1980@gmail.com/579FAC8C" id="purple3688bfc2">
+<query xmlns="http://jabber.org/protocol/disco#items" node="http://jabber.org/protocol/commands"/>
+</iq>
+
+
+<iq from="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/James’s Ma987A682B" type="result" id="aadda" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info">
+<identity category="client" type="pc" name="imagent"/>
+<feature var="apple:iq:vc:ice"/>
+</query>
+</iq>
+
+
+<iq from="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/189D3103" type="result" id="aad7a" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://pidgin.im/#elbDWGeJ8mFRjVG016NePLIqJxA=">
+<identity category="client" type="pc" name="pidgin"/>
+<feature var="jabber:iq:last"/>
+<feature var="jabber:iq:oob"/>
+<feature var="urn:xmpp:time"/>
+<feature var="jabber:iq:version"/>
+<feature var="jabber:x:conference"/>
+<feature var="http://jabber.org/protocol/bytestreams"/>
+<feature var="http://jabber.org/protocol/caps"/>
+<feature var="http://jabber.org/protocol/chatstates"/>
+<feature var="http://jabber.org/protocol/disco#info"/>
+<feature var="http://jabber.org/protocol/disco#items"/>
+<feature var="http://jabber.org/protocol/muc"/>
+<feature var="http://jabber.org/protocol/muc#user"/>
+<feature var="http://jabber.org/protocol/si"/>
+<feature var="http://jabber.org/protocol/si/profile/file-transfer"/>
+<feature var="http://jabber.org/protocol/xhtml-im"/>
+<feature var="urn:xmpp:ping"/>
+<feature var="urn:xmpp:attention:0"/>
+<feature var="urn:xmpp:bob"/>
+<feature var="urn:xmpp:jingle:1"/>
+<feature var="urn:xmpp:avatar:metadata+notify"/>
+<feature var="http://jabber.org/protocol/mood+notify"/>
+<feature var="http://jabber.org/protocol/tune+notify"/>
+<feature var="http://jabber.org/protocol/nick+notify"/>
+<feature var="http://jabber.org/protocol/ibb"/>
+</query>
+</iq>
+
+
+<presence from="romout@gmail.com/android_talkf55384f89e7b" to="ungerik@gmail.com">
+<status/>
+<show>away</show>
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>0def1bff9f59411c9827a18f4420f9db220ce67c</photo>
+</x>
+</presence>
+
+
+<iq type="get" to="romout@gmail.com" id="aadea">
+<vCard xmlns="vcard-temp"/>
+</iq>
+
+
+<presence from="romout@gmail.com/android_talkf55384f89e7b" to="ungerik@gmail.com">
+<status/>
+<show>away</show>
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>806c9bfebd3f7c07e90963eb6a13056dcef615cf</photo>
+</x>
+</presence>
+
+
+<iq from="romout@gmail.com" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aadea">
+<vCard xmlns="vcard-temp">
+<FN>Ramin Dalkouhi</FN>
+<PHOTO>
+<TYPE>image/jpeg</TYPE>
+<BINVAL>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</BINVAL>
+</PHOTO>
+</vCard>
+</iq>
+
+
+<presence from="363dmppe9jzd23p19z83yhritd@public.talk.google.com/android84e5431a607c" to="ungerik@gmail.com">
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>ab469b9a040af921728008c54a6da360c5df02c3</photo>
+</x>
+</presence>
+
+
+<iq type="get" to="363dmppe9jzd23p19z83yhritd@public.talk.google.com" id="aadfa">
+<vCard xmlns="vcard-temp"/>
+</iq>
+
+
+<presence from="363dmppe9jzd23p19z83yhritd@public.talk.google.com/android_talk89914bec27f7" to="ungerik@gmail.com">
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<show>away</show>
+<x xmlns="vcard-temp:x:update">
+<photo>ab469b9a040af921728008c54a6da360c5df02c3</photo>
+</x>
+</presence>
+
+
+<presence from="363dmppe9jzd23p19z83yhritd@public.talk.google.com/android_talk89914bec27f7" to="ungerik@gmail.com">
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<show>away</show>
+<x xmlns="vcard-temp:x:update">
+<photo>326fdd2498126bcde1cc24e3476da435f698e80b</photo>
+</x>
+</presence>
+
+
+<presence from="363dmppe9jzd23p19z83yhritd@public.talk.google.com/android84e5431a607c" to="ungerik@gmail.com">
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>326fdd2498126bcde1cc24e3476da435f698e80b</photo>
+</x>
+</presence>
+
+
+<iq from="363dmppe9jzd23p19z83yhritd@public.talk.google.com" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aadfa">
+<vCard xmlns="vcard-temp">
+<FN>Mike D. Njoroge</FN>
+<PHOTO>
+<TYPE>image/jpeg</TYPE>
+<BINVAL>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</BINVAL>
+</PHOTO>
+</vCard>
+</iq>
+
+
+<presence from="george.patterson@gmail.com/android_talk7440607193ae" to="ungerik@gmail.com">
+<status/>
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<show>away</show>
+<x xmlns="vcard-temp:x:update">
+<photo/>
+</x>
+</presence>
+
+
+<presence from="george.patterson@gmail.com/android_talk7440607193ae" to="ungerik@gmail.com">
+<status/>
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<x xmlns="vcard-temp:x:update">
+<photo/>
+</x>
+</presence>
+
+
+<presence from="363dmppe9jzd23p19z83yhritd@public.talk.google.com/android84e5431a607c" to="ungerik@gmail.com">
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<show>away</show>
+<x xmlns="vcard-temp:x:update">
+<photo>326fdd2498126bcde1cc24e3476da435f698e80b</photo>
+</x>
+</presence>
+
+
+<presence from="363dmppe9jzd23p19z83yhritd@public.talk.google.com/android84e5431a607c" to="ungerik@gmail.com">
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>326fdd2498126bcde1cc24e3476da435f698e80b</photo>
+</x>
+</presence>
+
+
+<presence from="2oox804etd1683q4bbaeceiasl@public.talk.google.com/Adium3919487F" to="ungerik@gmail.com">
+<c xmlns="http://jabber.org/protocol/caps" node="http://pidgin.im/" ver="VUFD6HcFmUT2NxJkBGCiKlZnS3M=" hash="sha-1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>799a3c2e34f3c4923f1ced3f560158b88e1c53c9</photo>
+</x>
+</presence>
+
+
+<iq type="get" to="2oox804etd1683q4bbaeceiasl@public.talk.google.com/Adium3919487F" id="aae0a">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://pidgin.im/#VUFD6HcFmUT2NxJkBGCiKlZnS3M="/>
+</iq>
+
+
+<iq type="get" to="2oox804etd1683q4bbaeceiasl@public.talk.google.com" id="aae1a">
+<vCard xmlns="vcard-temp"/>
+</iq>
+
+
+<iq from="2oox804etd1683q4bbaeceiasl@public.talk.google.com" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aae1a">
+<vCard xmlns="vcard-temp">
+<FN>Andy Gelme</FN>
+<PHOTO>
+<TYPE>image/jpeg</TYPE>
+<BINVAL>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</BINVAL>
+</PHOTO>
+</vCard>
+</iq>
+
+
+<iq from="2oox804etd1683q4bbaeceiasl@public.talk.google.com/Adium3919487F" type="get" id="purpleb9d01273" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#items" node="http://jabber.org/protocol/commands"/>
+</iq>
+
+
+<iq type="result" to="2oox804etd1683q4bbaeceiasl@public.talk.google.com/Adium3919487F" id="purpleb9d01273">
+<query xmlns="http://jabber.org/protocol/disco#items" node="http://jabber.org/protocol/commands"/>
+</iq>
+
+
+<iq from="2oox804etd1683q4bbaeceiasl@public.talk.google.com/Adium3919487F" type="result" id="aae0a" to="ungerik@gmail.com/Psi+8B65FA97">
+<query xmlns="http://jabber.org/protocol/disco#info" node="http://pidgin.im/#VUFD6HcFmUT2NxJkBGCiKlZnS3M=">
+<identity category="client" type="pc" name="Adium"/>
+<feature var="jabber:iq:last"/>
+<feature var="jabber:iq:oob"/>
+<feature var="urn:xmpp:time"/>
+<feature var="jabber:iq:version"/>
+<feature var="jabber:x:conference"/>
+<feature var="http://jabber.org/protocol/bytestreams"/>
+<feature var="http://jabber.org/protocol/caps"/>
+<feature var="http://jabber.org/protocol/chatstates"/>
+<feature var="http://jabber.org/protocol/disco#info"/>
+<feature var="http://jabber.org/protocol/disco#items"/>
+<feature var="http://jabber.org/protocol/muc"/>
+<feature var="http://jabber.org/protocol/muc#user"/>
+<feature var="http://jabber.org/protocol/si"/>
+<feature var="http://jabber.org/protocol/si/profile/file-transfer"/>
+<feature var="http://jabber.org/protocol/xhtml-im"/>
+<feature var="urn:xmpp:ping"/>
+<feature var="urn:xmpp:attention:0"/>
+<feature var="urn:xmpp:bob"/>
+<feature var="urn:xmpp:jingle:1"/>
+<feature var="urn:xmpp:avatar:metadata+notify"/>
+<feature var="http://jabber.org/protocol/mood+notify"/>
+<feature var="http://jabber.org/protocol/tune+notify"/>
+<feature var="http://jabber.org/protocol/nick+notify"/>
+<feature var="http://jabber.org/protocol/ibb"/>
+<feature var="http://jabber.org/protocol/commands"/>
+</query>
+</iq>
+
+
+<presence from="george.patterson@gmail.com/android_talk7440607193ae" to="ungerik@gmail.com">
+<status/>
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<show>away</show>
+<x xmlns="vcard-temp:x:update">
+<photo/>
+</x>
+</presence>
+
+
+<presence from="2oox804etd1683q4bbaeceiasl@public.talk.google.com/Adium3919487F" to="ungerik@gmail.com">
+<c xmlns="http://jabber.org/protocol/caps" node="http://pidgin.im/" ver="VUFD6HcFmUT2NxJkBGCiKlZnS3M=" hash="sha-1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>072e4c3cf3fc39478fb2db2fd192b5b8b788362a</photo>
+</x>
+</presence>
+
+
+<presence from="363dmppe9jzd23p19z83yhritd@public.talk.google.com/android84e5431a607c" to="ungerik@gmail.com">
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<show>away</show>
+<x xmlns="vcard-temp:x:update">
+<photo>326fdd2498126bcde1cc24e3476da435f698e80b</photo>
+</x>
+</presence>
+
+
+<presence from="george.patterson@gmail.com/android_talk7440607193ae" to="ungerik@gmail.com">
+<status/>
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<x xmlns="vcard-temp:x:update">
+<photo/>
+</x>
+</presence>
+
+
+<presence from="363dmppe9jzd23p19z83yhritd@public.talk.google.com/android84e5431a607c" to="ungerik@gmail.com">
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>326fdd2498126bcde1cc24e3476da435f698e80b</photo>
+</x>
+</presence>
+
+
+<presence from="george.patterson@gmail.com/android_talk7440607193ae" to="ungerik@gmail.com">
+<status/>
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<show>away</show>
+<x xmlns="vcard-temp:x:update">
+<photo/>
+</x>
+</presence>
+
+
+<presence from="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/TalkGadgetF05FBE7E" to="ungerik@gmail.com">
+<show>away</show>
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://talkgadget.google.com/client/caps" ver="1.0" ext="pmuc-v1 vavinvite-v1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>2b1bad05ec2b8088e9e0b6737ea9fbe181337a5a</photo>
+</x>
+</presence>
+
+
+<iq type="get" to="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com" id="aae2a">
+<vCard xmlns="vcard-temp"/>
+</iq>
+
+
+<presence from="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/James’s Ma987A682B" to="ungerik@gmail.com">
+<priority>0</priority>
+<c xmlns="http://jabber.org/protocol/caps" node="http://www.apple.com/ichat/caps" ver="900" ext="ice"/>
+<x xmlns="http://jabber.org/protocol/tune"/>
+<x xmlns="vcard-temp:x:update">
+<photo>2b1bad05ec2b8088e9e0b6737ea9fbe181337a5a</photo>
+</x>
+</presence>
+
+
+<presence from="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/189D3103" to="ungerik@gmail.com">
+<show>away</show>
+<c xmlns="http://jabber.org/protocol/caps" node="http://pidgin.im/" ver="elbDWGeJ8mFRjVG016NePLIqJxA=" hash="sha-1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>2b1bad05ec2b8088e9e0b6737ea9fbe181337a5a</photo>
+</x>
+</presence>
+
+
+<iq from="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com" type="result" to="ungerik@gmail.com/Psi+8B65FA97" id="aae2a">
+<vCard xmlns="vcard-temp">
+<FN>Griff Miester</FN>
+<PHOTO>
+<TYPE>image/jpeg</TYPE>
+<BINVAL>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</BINVAL>
+</PHOTO>
+</vCard>
+</iq>
+
+
+<presence from="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/James’s Ma987A682B" to="ungerik@gmail.com">
+<priority>0</priority>
+<c xmlns="http://jabber.org/protocol/caps" node="http://www.apple.com/ichat/caps" ver="900" ext="ice"/>
+<x xmlns="http://jabber.org/protocol/tune"/>
+<x xmlns="vcard-temp:x:update">
+<photo>1bc8f4aad1fec7d2a30cc38dd6e0f25b0b0d3f4d</photo>
+</x>
+</presence>
+
+
+<presence from="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/TalkGadgetF05FBE7E" to="ungerik@gmail.com">
+<show>away</show>
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://talkgadget.google.com/client/caps" ver="1.0" ext="pmuc-v1 vavinvite-v1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>1bc8f4aad1fec7d2a30cc38dd6e0f25b0b0d3f4d</photo>
+</x>
+</presence>
+
+
+<presence from="1qg2s5qivuox62vx527kzio1v0@public.talk.google.com/189D3103" to="ungerik@gmail.com">
+<show>away</show>
+<c xmlns="http://jabber.org/protocol/caps" node="http://pidgin.im/" ver="elbDWGeJ8mFRjVG016NePLIqJxA=" hash="sha-1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>1bc8f4aad1fec7d2a30cc38dd6e0f25b0b0d3f4d</photo>
+</x>
+</presence>
+
+
+<presence from="363dmppe9jzd23p19z83yhritd@public.talk.google.com/android_talk89914bec27f7" to="ungerik@gmail.com">
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<x xmlns="vcard-temp:x:update">
+<photo>326fdd2498126bcde1cc24e3476da435f698e80b</photo>
+</x>
+</presence>
+
+
+<presence from="363dmppe9jzd23p19z83yhritd@public.talk.google.com/android84e5431a607c" to="ungerik@gmail.com">
+<priority>24</priority>
+<caps:c xmlns:caps="http://jabber.org/protocol/caps" node="http://www.android.com/gtalk/client/caps" ext="pmuc-v1 voice-v1 video-v1 camera-v1" ver="1.1"/>
+<show>away</show>
+<x xmlns="vcard-temp:x:update">
+<photo>326fdd2498126bcde1cc24e3476da435f698e80b</photo>
+</x>
+</presence>
+
