@@ -61,7 +61,7 @@ int readStreamHeader(char *xml) {
   ret = xmlTextReaderRead(reader);
   if (ret == 1) {
     xmlChar *name = xmlTextReaderName(reader);
-    assert(strcmp(name, "stream:stream") == 0);
+    assert(strcmp((char *)name, "stream:stream") == 0);
     free(name);
   } else {
     return 2;
