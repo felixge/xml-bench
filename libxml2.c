@@ -7,16 +7,16 @@
 char *read_file_contents(char *name);
 int readStreamHeader(char *xml);
 const int loop_size = 100;
-const int samples = 100;
+const int sample_size = 100;
 
 int main() {
-  printf("run\tops_per_sec\tloop_size\n");
+  printf("sample\tops_per_sec\tloop_size\n");
   char *example_xml = read_file_contents("example.xml");
   xmlInitParser();
 
-  int num = 0;
-  while (num < samples) {
-    num++;
+  int sample = 0;
+  while (sample < sample_size) {
+    sample++;
 
     int i;
     clock_t start = clock();
@@ -26,7 +26,7 @@ int main() {
 
     float sec = ((float)clock() - (float)start) / CLOCKS_PER_SEC;
     float ops_per_sec = 1 / (sec / loop_size);
-    printf("%d\t%f\t%d\n", num, ops_per_sec, loop_size);
+    printf("%d\t%f\t%d\n", sample, ops_per_sec, loop_size);
     fflush(stdout);
   }
 

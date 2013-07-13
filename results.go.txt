@@ -1,3 +1,0 @@
-PASS
-BenchmarkHello	  200000	     11684 ns/op
-ok  	_/Users/felix/code/xml-bench	2.796s

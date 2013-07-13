@@ -3,14 +3,17 @@ package main
 import (
 	"bytes"
 	"encoding/xml"
+	"fmt"
 	"io"
 	"os"
-	"testing"
+	"time"
 )
 
 var exampleXml = &bytes.Buffer{}
+const loopSize = 10000
+const sampleSize = 100;
 
-func init() {
+func main() {
 	// Load doc into memory buffer before running the benchmark. We just want to
 	// to benchmark the decoding here.
 	file, err := os.Open("example.xml")
@@ -22,19 +25,22 @@ func init() {
 	if _, err := io.Copy(exampleXml, file); err != nil {
 		panic(err)
 	}
-}
 
-func BenchmarkHello(b *testing.B) {
-	for i := 0; i < b.N; i++ {
-		// copy exampleXml buffer
-		b.StopTimer()
-		reader := &bytes.Buffer{}
-		*reader = *exampleXml
-		b.StartTimer()
+  fmt.Printf("sample\tops_per_sec\tloop_size\n");
+	for sample := 0; sample < sampleSize; sample++ {
+		start := time.Now()
+		for i := 0; i < loopSize; i++ {
+			// copy exampleXml buffer
+			reader := &bytes.Buffer{}
+			*reader = *exampleXml
 
-		if err := readStreamHeader(reader); err != nil {
-			panic(err)
+			if err := readStreamHeader(reader); err != nil {
+				panic(err)
+			}
 		}
+		sec := time.Since(start).Seconds()
+		opsPerSec := 1 / (sec / loopSize)
+		fmt.Printf("%d\t%f\t%d\n", sample, opsPerSec, loopSize)
 	}
 }
 
