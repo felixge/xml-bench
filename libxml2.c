@@ -6,7 +6,7 @@
 
 char *read_file_contents(char *name);
 int readStreamHeader(char *xml);
-const int loop_size = 100;
+const int loop_size = 1000;
 const int sample_size = 100;
 
 int main() {

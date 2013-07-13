@@ -11,7 +11,7 @@ go: go.go
 	go build $^
 
 libxml2.txt: libxml2
-	$(valgrind) ./$^ | tee $@
+	./$^ | tee $@
 
 libxml2: libxml2.c
 	$(gcc) $^ `pkg-config --cflags libxml-2.0` `pkg-config --libs libxml-2.0` -o $@
