@@ -1,0 +1,35 @@
+# see http://stackoverflow.com/questions/12452541/valgrind-reports-leaked-memory-on-os-x-10-8-1
+# OS X 10.8 isn't supported, has a bunch of 'leaks' in the loader
+{
+   osx_1080_loader_false_positive_1
+   Memcheck:Leak
+   ...
+   fun:_ZN11ImageLoader23recursiveInitializationERKNS_11LinkContextEjRNS_21InitializerTimingListE
+   ...
+}
+{
+   osx_1080_loader_false_positive_2
+   Memcheck:Leak
+   ...
+   fun:_ZN16ImageLoaderMachO16doInitializationERKN11ImageLoader11LinkContextE
+   ...
+}
+{
+   osx_1080_loader_false_positive_3
+   Memcheck:Leak
+   ...
+   fun:map_images_nolock
+   ...
+}
+{
+   osx_1080_loader_false_positive_4
+   Memcheck:Leak
+   ...
+   fun:_class_initialize
+   fun:_class_initialize
+   fun:prepareForMethodLookup
+   fun:lookUpMethod
+   fun:objc_msgSend
+   fun:_libxpc_initializer
+   ...
+}
