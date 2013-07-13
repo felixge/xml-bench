@@ -14,6 +14,6 @@ libxml2.txt: libxml2
 	./$^ | tee $@
 
 libxml2: libxml2.c
-	$(gcc) $^ `pkg-config --cflags libxml-2.0` `pkg-config --libs libxml-2.0` -o $@
+	$(gcc) `pkg-config --cflags libxml-2.0` `pkg-config --libs libxml-2.0` -o $@ $^
 
 .PHONY: all libxml2.txt go.txt
