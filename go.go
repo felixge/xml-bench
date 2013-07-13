@@ -27,7 +27,7 @@ func main() {
 	}
 
   fmt.Printf("sample\tops_per_sec\tloop_size\n");
-	for sample := 0; sample < sampleSize; sample++ {
+	for sample := 1; sample <= sampleSize; sample++ {
 		start := time.Now()
 		for i := 0; i < loopSize; i++ {
 			// copy exampleXml buffer

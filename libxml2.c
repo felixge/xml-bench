@@ -15,7 +15,7 @@ int main() {
   xmlInitParser();
   xmlTextReaderPtr reader;
 
-  int sample = 0;
+  int sample = 1;
   while (sample < sample_size) {
     sample++;
 
