@@ -68,8 +68,6 @@ int countNodes(char *xml) {
       return count;
     }
 
-    xmlChar *name = xmlTextReaderName(reader);
-    free(name);
     count++;
   }
   xmlFreeTextReader(reader);

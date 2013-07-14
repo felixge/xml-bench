@@ -10,7 +10,7 @@ import (
 )
 
 var exampleXml = &bytes.Buffer{}
-const loopSize = 10000
+const loopSize = 100
 const sampleSize = 100;
 
 func main() {
@@ -34,8 +34,10 @@ func main() {
 			reader := &bytes.Buffer{}
 			*reader = *exampleXml
 
-			if err := readStreamHeader(reader); err != nil {
+			if count, err := countNodes(reader); err != nil {
 				panic(err)
+			} else if count != 1574 {
+				panic(fmt.Errorf("wrong node count: %d", count))
 			}
 		}
 		sec := time.Since(start).Seconds()
@@ -44,17 +46,21 @@ func main() {
 	}
 }
 
-func readStreamHeader(reader io.Reader) (error) {
-	decoder := xml.NewDecoder(reader)
-	elem, err := nextElement(decoder)
-	if err != nil {
-		return err
-	}
+func countNodes(reader io.Reader) (int, error) {
+	count := 0
 
-	if elem.Name.Local != "stream" {
-		return fmt.Errorf("invalid element name: %s", elem.Name.Local)
+	decoder := xml.NewDecoder(reader)
+	for {
+		_, err := nextElement(decoder)
+		if err == io.EOF {
+			return count, nil
+		} else if err != nil {
+			return count, err
+		}
+
+		count++
 	}
-	return nil
+	panic("unreachable")
 }
 
 func nextElement(decoder *xml.Decoder) (*xml.StartElement, error) {
