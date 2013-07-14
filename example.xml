@@ -24,7 +24,6 @@
 <proceed xmlns="urn:ietf:params:xml:ns:xmpp-tls"/>
 
 
-<?xml version="1.0"?>
 
 
 <stream:stream xmlns:stream="http://etherx.jabber.org/streams" version="1.0" xmlns="jabber:client" to="gmail.com" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">
@@ -48,7 +47,6 @@
 <success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
 
 
-<?xml version="1.0"?>
 
 
 <stream:stream xmlns:stream="http://etherx.jabber.org/streams" version="1.0" xmlns="jabber:client" to="gmail.com" xml:lang="en" xmlns:xml="http://www.w3.org/XML/1998/namespace">

@@ -5,8 +5,8 @@
 #include <libxml/xmlreader.h>
 
 char *read_file_contents(char *name);
-int readStreamHeader(char *xml);
-const int loop_size = 10000;
+int countNodes(char *xml);
+const int loop_size = 100;
 const int sample_size = 100;
 
 int main() {
@@ -23,8 +23,8 @@ int main() {
     int i;
     clock_t start = clock();
     for (i = 0; i < loop_size; i++) {
-      ret = readStreamHeader(example_xml);
-      assert(ret == 0);
+      ret = countNodes(example_xml);
+      assert(ret == 2413);
     }
 
     float sec = ((float)clock() - (float)start) / CLOCKS_PER_SEC;
@@ -52,20 +52,26 @@ char *read_file_contents(char *name) {
   return file_contents;
 }
 
-int readStreamHeader(char *xml) {
-  xmlTextReaderPtr reader = xmlReaderForMemory(xml, strlen(xml), NULL, NULL, 0);
-  if (reader == NULL) {
-    return 1;
-  }
+void	handleError(void * arg, const char * msg, xmlParserSeverities severity, xmlTextReaderLocatorPtr locator) {
+}
 
-  int ret = xmlTextReaderRead(reader);
-  if (ret == 1) {
+int countNodes(char *xml) {
+  xmlTextReaderPtr reader = xmlReaderForMemory(xml, strlen(xml), NULL, NULL, 0);
+  assert(reader != NULL);
+
+  xmlTextReaderSetErrorHandler(reader, handleError, NULL);
+
+  int count = 0;
+  while (1) {
+    int ret = xmlTextReaderRead(reader);
+    if (ret != 1) {
+      return count;
+    }
+
     xmlChar *name = xmlTextReaderName(reader);
-    assert(strcmp((char *)name, "stream:stream") == 0);
     free(name);
-  } else {
-    return 2;
+    count++;
   }
   xmlFreeTextReader(reader);
-  return 0;
+  return count;
 }
