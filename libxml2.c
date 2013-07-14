@@ -16,7 +16,7 @@ int main() {
   char *example_xml = read_file_contents("example.xml");
   int example_xml_size = strlen(example_xml);
 
-  int sample = 1;
+  int sample = 0;
   int ret;
   while (sample < sample_size) {
     sample++;
