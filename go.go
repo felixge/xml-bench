@@ -46,8 +46,15 @@ func main() {
 
 func readStreamHeader(reader io.Reader) (error) {
 	decoder := xml.NewDecoder(reader)
-	_, err := nextElement(decoder)
-	return err
+	elem, err := nextElement(decoder)
+	if err != nil {
+		return err
+	}
+
+	if elem.Name.Local != "stream" {
+		return fmt.Errorf("invalid element name: %s", elem.Name.Local)
+	}
+	return nil
 }
 
 func nextElement(decoder *xml.Decoder) (*xml.StartElement, error) {
