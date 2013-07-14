@@ -5,7 +5,7 @@
 #include <libxml/xmlreader.h>
 
 char *read_file_contents(char *name);
-int readStreamHeader(xmlTextReaderPtr reader, char *xml);
+int readStreamHeader(char *xml);
 const int loop_size = 10000;
 const int sample_size = 100;
 
@@ -13,16 +13,17 @@ int main() {
   printf("sample\tops_per_sec\tloop_size\n");
   char *example_xml = read_file_contents("example.xml");
   xmlInitParser();
-  xmlTextReaderPtr reader;
 
   int sample = 1;
+  int ret;
   while (sample < sample_size) {
     sample++;
 
     int i;
     clock_t start = clock();
     for (i = 0; i < loop_size; i++) {
-      readStreamHeader(reader, example_xml);
+      ret = readStreamHeader(example_xml);
+      assert(ret == 0);
     }
 
     float sec = ((float)clock() - (float)start) / CLOCKS_PER_SEC;
@@ -50,14 +51,13 @@ char *read_file_contents(char *name) {
   return file_contents;
 }
 
-int readStreamHeader(xmlTextReaderPtr reader, char *xml) {
-  int ret;
-  ret = xmlReaderNewMemory(reader, xml, strlen(xml), "", NULL, 0);
-  if (reader != 0) {
+int readStreamHeader(char *xml) {
+  xmlTextReaderPtr reader = xmlReaderForMemory(xml, strlen(xml), NULL, NULL, 0);
+  if (reader == NULL) {
     return 1;
   }
 
-  ret = xmlTextReaderRead(reader);
+  int ret = xmlTextReaderRead(reader);
   if (ret == 1) {
     xmlChar *name = xmlTextReaderName(reader);
     assert(strcmp((char *)name, "stream:stream") == 0);
