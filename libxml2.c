@@ -10,9 +10,10 @@ const int loop_size = 10000;
 const int sample_size = 100;
 
 int main() {
+  LIBXML_TEST_VERSION;
+
   printf("sample\tops_per_sec\tloop_size\n");
   char *example_xml = read_file_contents("example.xml");
-  xmlInitParser();
 
   int sample = 1;
   int ret;
@@ -44,7 +45,7 @@ char *read_file_contents(char *name) {
   fseek(input_file, 0, SEEK_END);
   input_file_size = ftell(input_file);
   rewind(input_file);
-  file_contents = malloc(input_file_size * (sizeof(char))+1);
+  file_contents = malloc(input_file_size*(sizeof(char))+1);
   fread(file_contents, sizeof(char), input_file_size, input_file);
   fclose(input_file);
   file_contents[input_file_size] = 0;
