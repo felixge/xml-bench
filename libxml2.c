@@ -12,8 +12,9 @@ const int sample_size = 100;
 int main() {
   LIBXML_TEST_VERSION;
 
-  printf("sample\tops_per_sec\tloop_size\n");
+  printf("sample\tmb_per_sec\n");
   char *example_xml = read_file_contents("example.xml");
+  int example_xml_size = strlen(example_xml);
 
   int sample = 1;
   int ret;
@@ -29,7 +30,8 @@ int main() {
 
     float sec = ((float)clock() - (float)start) / CLOCKS_PER_SEC;
     float ops_per_sec = 1 / (sec / loop_size);
-    printf("%d\t%f\t%d\n", sample, ops_per_sec, loop_size);
+    float mb_per_sec = (ops_per_sec * example_xml_size) / 1024 / 1024;
+    printf("%d\t%f\n", sample, mb_per_sec);
     fflush(stdout);
   }
 

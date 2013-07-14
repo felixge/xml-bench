@@ -26,7 +26,7 @@ func main() {
 		panic(err)
 	}
 
-  fmt.Printf("sample\tops_per_sec\tloop_size\n");
+  fmt.Printf("sample\tmb_per_sec\n");
 	for sample := 1; sample <= sampleSize; sample++ {
 		start := time.Now()
 		for i := 0; i < loopSize; i++ {
@@ -42,7 +42,8 @@ func main() {
 		}
 		sec := time.Since(start).Seconds()
 		opsPerSec := 1 / (sec / loopSize)
-		fmt.Printf("%d\t%f\t%d\n", sample, opsPerSec, loopSize)
+		mbPerSec := (opsPerSec * float64(exampleXml.Len()))/1024/1024
+		fmt.Printf("%d\t%f\n", sample, mbPerSec)
 	}
 }
 
