@@ -25,7 +25,8 @@ int main() {
     clock_t start = clock();
     for (i = 0; i < loop_size; i++) {
       ret = countNodes(example_xml);
-      assert(ret == 2413);
+      /*printf("count: %d\n", ret);*/
+      assert(ret == 189);
     }
 
     float sec = ((float)clock() - (float)start) / CLOCKS_PER_SEC;
@@ -70,6 +71,20 @@ int countNodes(char *xml) {
       return count;
     }
 
+    char * name = (char *)xmlTextReaderName(reader);
+
+    if (strcmp(name, "stream:stream") != 0 && strcmp(name, "#text") != 0) {
+      xmlNodePtr node = xmlTextReaderExpand(reader);
+      if (node == NULL) {
+        return count;
+      } else {
+        /*printf("name: %s\n", name);*/
+        ret = xmlTextReaderNext(reader);
+        assert(ret == 1);
+      }
+    }
+
+    free(name);
     count++;
   }
   xmlFreeTextReader(reader);
