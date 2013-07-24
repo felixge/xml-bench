@@ -9,6 +9,7 @@
 
 char *read_file_contents(char *name);
 int countNodes(char *xml);
+int countNodes2(char *xml);
 const int loop_size = 100;
 const int sample_size = 100;
 
@@ -102,8 +103,6 @@ void print_node(xmlNodePtr node) {
 }
 
 void print_nodes(xmlNodeSetPtr nodes) {
-  xmlNodePtr cur;
-
   printf("Result (%d nodes):\n", nodes->nodeNr);
   for(int i = 0; i < nodes->nodeNr; i++) {
     assert(nodes->nodeTab[i]);
@@ -125,54 +124,78 @@ int countNodes(char *xml) {
   int count = 0;
   while (1) {
     int ret = xmlTextReaderRead(reader);
+    if (ret == 0) {
+      return count;
+    }
     assert(ret == 1);
 
     char * name = (char *)xmlTextReaderName(reader);
+    int type = xmlTextReaderNodeType(reader);
 
-    if (strcmp(name, "stream:stream") != 0 && strcmp(name, "#text") != 0 && strcmp(name, "#comment") != 0) {
+    /*if (strcmp(name, "stream:stream") != 0 && type == XML_ELEMENT_NODE) {*/
+    if (strcmp(name, "iq") == 0 && type == XML_ELEMENT_NODE) {
       /*xmlChar * str = xmlTextReaderReadInnerXml(reader);*/
       /*printf("str: %s\n", str);*/
       xmlNodePtr node = xmlTextReaderExpand(reader);
-      if (node != NULL) {
-        xmlXPathContextPtr xpathCtx = xmlXPathNewContext(node->doc);
-        xpathCtx->node = node;
-        /*xmlDocPtr doc = xmlTextReaderCurrentDoc(reader);*/
-        /*xmlXPathContextPtr xpathCtx = xmlXPathNewContext(doc);*/
-        assert(xpathCtx != NULL);
+      assert(node);
+      /*xmlXPathContextPtr xpathCtx = xmlXPathNewContext(node->doc);*/
+      /*xpathCtx->node = node;*/
+      /*xmlDocPtr doc = (xmlDocPtr)node;*/
 
-        ret = xmlXPathRegisterNs(xpathCtx, BAD_CAST "discoinfo", BAD_CAST "http://jabber.org/protocol/disco#info");
-        assert(ret == 0);
-        ret = xmlXPathRegisterNs(xpathCtx, BAD_CAST "jc", BAD_CAST "jabber:client");
-        assert(ret == 0);
+      xmlDocPtr doc = xmlTextReaderCurrentDoc(reader);
+      assert(doc);
+      xmlXPathContextPtr xpathCtx = xmlXPathNewContext(doc);
+      assert(xpathCtx);
 
-        /*xmlXPathObjectPtr result = xmlXPathEval(BAD_CAST "/jc:iq/discoinfo:query", xpathCtx);*/
-        xmlXPathObjectPtr result = xmlXPathEval(BAD_CAST "//jc:iq/discoinfo:query", xpathCtx);
-        if (!xmlXPathNodeSetIsEmpty(result->nodesetval)) {
-          print_nodes(result->nodesetval);
-          print_node(node);
-          printf("\n\n");
-          /*printf("WE GOT A MATCH\n");*/
-        }
+      ret = xmlXPathRegisterNs(xpathCtx, BAD_CAST "discoinfo", BAD_CAST "http://jabber.org/protocol/disco#info");
+      assert(ret == 0);
+      ret = xmlXPathRegisterNs(xpathCtx, BAD_CAST "jc", BAD_CAST "jabber:client");
+      assert(ret == 0);
 
-        /*if (result->nodesetval->nodeNr > 0) {*/
-          /*print_xpath_nodes(result->nodesetval, stdout);*/
-        /*}*/
-        /*printf("HOLY BULL");*/
-        /*fflush(stdout);*/
-
-        xmlXPathFreeObject(result);
-        xmlXPathFreeContext(xpathCtx);
-
-        ret = xmlTextReaderNext(reader);
-        assert(ret == 1);
-      } else {
-        return count;
+      /*xmlXPathObjectPtr result = xmlXPathEval(BAD_CAST "/jc:iq/discoinfo:query", xpathCtx);*/
+      xmlXPathObjectPtr result = xmlXPathEvalExpression(BAD_CAST "//jc:iq/discoinfo:query", xpathCtx);
+      if (!xmlXPathNodeSetIsEmpty(result->nodesetval)) {
+        count = count + result->nodesetval->nodeNr;
+        print_nodes(result->nodesetval);
+        print_node(node);
+        printf("\n\n");
+        fflush(stdout);
       }
+
+      xmlXPathFreeObject(result);
+      xmlXPathFreeContext(xpathCtx);
+
+      /*ret = xmlTextReaderNext(reader);*/
+      /*assert(ret == 1);*/
+      /*ret = xmlTextReaderRead(reader);*/
+      /*assert(ret == 1);*/
     }
 
     free(name);
-    count++;
   }
   xmlFreeTextReader(reader);
   return count;
+}
+
+int countNodes2(char *xml) {
+  int ret;
+  xmlDocPtr doc = xmlParseMemory(xml, strlen(xml));
+  assert(doc);
+
+  xmlXPathContextPtr xpathCtx = xmlXPathNewContext(doc);
+  assert(xpathCtx);
+
+  ret = xmlXPathRegisterNs(xpathCtx, BAD_CAST "discoinfo", BAD_CAST "http://jabber.org/protocol/disco#info");
+  assert(ret == 0);
+  ret = xmlXPathRegisterNs(xpathCtx, BAD_CAST "jc", BAD_CAST "jabber:client");
+  assert(ret == 0);
+
+  xmlXPathObjectPtr result = xmlXPathEvalExpression(BAD_CAST "//jc:iq/discoinfo:query", xpathCtx);
+  if (!xmlXPathNodeSetIsEmpty(result->nodesetval)) {
+    print_nodes(result->nodesetval);
+    printf("\n\n");
+    fflush(stdout);
+  }
+
+  return 0;
 }
