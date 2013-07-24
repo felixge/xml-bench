@@ -16,4 +16,7 @@ libxml2.txt: libxml2
 libxml2: libxml2.c
 	$(gcc) $^ $(CFLAGS) $(LIBS) -o $@
 
+bug: bug.c
+	$(gcc) $^ $(CFLAGS) $(LIBS) -o $@
+
 .PHONY: all libxml2.txt go.txt

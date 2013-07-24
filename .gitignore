@@ -1,4 +1,5 @@
 *.un~
 /libxml2
 /go
+/bug
 *.dSYM/
