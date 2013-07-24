@@ -38,6 +38,57 @@ int main(int argc, char ** argv) {
   return 0;
 }
 
+void print_node(xmlNodePtr node) {
+  char * properties = "";
+  for (xmlAttrPtr p = node->properties; p != NULL; p = p->next) {
+    char * pair;
+    char * val = (char *)xmlGetProp(node, p->name);
+    asprintf(&pair, " %s=\"%s\"", p->name, val);
+    xmlFree(val);
+
+    if (strlen(properties) > 0) {
+      char * combined;
+      asprintf(&combined, "%s%s", properties, pair);
+      free(properties);
+      free(pair);
+      properties = combined;
+    } else {
+      properties = pair;
+    }
+
+    if (p->next == NULL) {
+      break;
+    }
+    p = p->next;
+  }
+
+  char * name;
+  if (node->ns) {
+    asprintf(&name, "%s:%s", node->ns->href, node->name);
+  } else {
+    asprintf(&name, "%s", node->name);
+  }
+
+  printf("<%s%s>\n", name, properties);
+  free(name);
+  if (strlen(properties) > 0) {
+    free(properties);
+  }
+}
+
+void print_nodes(xmlNodeSetPtr nodes) {
+  printf("Result (%d nodes):\n", nodes->nodeNr);
+  for(int i = 0; i < nodes->nodeNr; i++) {
+    assert(nodes->nodeTab[i]);
+
+    if(nodes->nodeTab[i]->type == XML_ELEMENT_NODE) {
+      print_node(nodes->nodeTab[i]);
+    } else {
+      printf("unhandled node type: %d\n", nodes->nodeTab[i]->type);
+    }
+  }
+}
+
 int count_normal(char * filename, char * xpath) {
   int count = 0;
   xmlDocPtr doc = xmlReadFile(filename, NULL, XML_PARSE_NOWARNING);
@@ -78,20 +129,26 @@ int count_text_reader(char * filename, char * xpath) {
     if (depth == 1 && type == XML_ELEMENT_NODE) {
       xmlNodePtr node = xmlTextReaderExpand(reader);
       assert(node);
+      print_node(node);
       xmlDocPtr doc = xmlTextReaderCurrentDoc(reader);
       assert(doc);
       xmlXPathContextPtr xpathCtx = xmlXPathNewContext(doc);
       assert(xpathCtx);
 
+      /*ret = xmlXPathSetContextNode(node, xpathCtx);*/
+      /*assert(ret == 0);*/
+
       apply_namespaces(xpathCtx);
 
-      xmlXPathObjectPtr result = xmlXPathEvalExpression(BAD_CAST xpath, xpathCtx);
+      xmlXPathObjectPtr result = xmlXPathNodeEval(node, BAD_CAST xpath, xpathCtx);
       if (!xmlXPathNodeSetIsEmpty(result->nodesetval)) {
         count += result->nodesetval->nodeNr;
+        print_nodes(result->nodesetval);
       }
 
       xmlXPathFreeObject(result);
       xmlXPathFreeContext(xpathCtx);
+      printf("\n\n");
     }
     free(name);
   }
