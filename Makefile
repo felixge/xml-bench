@@ -1,4 +1,4 @@
-gcc=gcc -Wall -g
+gcc=gcc -Wall -g -std=c99 -pedantic
 CFLAGS=`xml2-config --cflags`
 LIBS=`xml2-config --libs`
 
