@@ -123,7 +123,7 @@ int countNodes(char *xml) {
   while (1) {
     int ret = xmlTextReaderRead(reader);
     if (ret == 0) {
-      return count;
+      break;
     }
     assert(ret == 1);
 
