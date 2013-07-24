@@ -29,10 +29,8 @@ int main() {
     clock_t start = clock();
     for (i = 0; i < loop_size; i++) {
       ret = countNodes(example_xml);
-      fflush(stdout);
-      printf("count: %d\n", ret);
-      /*assert(ret == 202);*/
-      exit(0);
+      /*printf("count: %d\n", ret);*/
+      assert(ret == 104);
     }
 
     float sec = ((float)clock() - (float)start) / CLOCKS_PER_SEC;
@@ -131,46 +129,35 @@ int countNodes(char *xml) {
 
     char * name = (char *)xmlTextReaderName(reader);
     int type = xmlTextReaderNodeType(reader);
+    int depth = xmlTextReaderDepth(reader);
 
-    /*if (strcmp(name, "stream:stream") != 0 && type == XML_ELEMENT_NODE) {*/
-    if (strcmp(name, "iq") == 0 && type == XML_ELEMENT_NODE) {
-      /*xmlChar * str = xmlTextReaderReadInnerXml(reader);*/
-      /*printf("str: %s\n", str);*/
+    if (depth == 6 && type == XML_ELEMENT_NODE) {
       xmlNodePtr node = xmlTextReaderExpand(reader);
       assert(node);
-      /*xmlXPathContextPtr xpathCtx = xmlXPathNewContext(node->doc);*/
-      /*xpathCtx->node = node;*/
-      /*xmlDocPtr doc = (xmlDocPtr)node;*/
-
       xmlDocPtr doc = xmlTextReaderCurrentDoc(reader);
       assert(doc);
       xmlXPathContextPtr xpathCtx = xmlXPathNewContext(doc);
       assert(xpathCtx);
+      ret = xmlXPathSetContextNode(node, xpathCtx);
+      assert(ret == 0);
 
       ret = xmlXPathRegisterNs(xpathCtx, BAD_CAST "discoinfo", BAD_CAST "http://jabber.org/protocol/disco#info");
       assert(ret == 0);
       ret = xmlXPathRegisterNs(xpathCtx, BAD_CAST "jc", BAD_CAST "jabber:client");
       assert(ret == 0);
 
-      /*xmlXPathObjectPtr result = xmlXPathEval(BAD_CAST "/jc:iq/discoinfo:query", xpathCtx);*/
-      xmlXPathObjectPtr result = xmlXPathEvalExpression(BAD_CAST "//jc:iq/discoinfo:query", xpathCtx);
+      xmlXPathObjectPtr result = xmlXPathEvalExpression(BAD_CAST "self::jc:iq/discoinfo:query", xpathCtx);
       if (!xmlXPathNodeSetIsEmpty(result->nodesetval)) {
         count = count + result->nodesetval->nodeNr;
-        print_nodes(result->nodesetval);
-        print_node(node);
-        printf("\n\n");
-        fflush(stdout);
+        /*print_nodes(result->nodesetval);*/
+        /*print_node(node);*/
+        /*printf("\n\n");*/
+        /*fflush(stdout);*/
       }
 
       xmlXPathFreeObject(result);
       xmlXPathFreeContext(xpathCtx);
-
-      /*ret = xmlTextReaderNext(reader);*/
-      /*assert(ret == 1);*/
-      /*ret = xmlTextReaderRead(reader);*/
-      /*assert(ret == 1);*/
     }
-
     free(name);
   }
   xmlFreeTextReader(reader);
