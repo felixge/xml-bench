@@ -1,6 +1,7 @@
 *.un~
 /libxml2
 /go
+/gokogiri
 /bug
 *.dSYM/
 /src

@@ -10,6 +10,12 @@ go.txt: go
 go: go.go
 	go build $^
 
+gokogiri.txt: gokogiri
+	./$^ | tee $@
+
+gokogiri: gokogiri.go
+	go build $^
+
 libxml2.txt: libxml2
 	./$^ | tee $@
 
