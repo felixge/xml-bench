@@ -3,3 +3,7 @@
 /go
 /bug
 *.dSYM/
+/src
+/.vagrant
+/env.sh
+/pkg
